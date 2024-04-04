@@ -10,4 +10,6 @@ else:
         total_sum = total_sum + n
         n = n - 1
         print(f"The sum of natural numbers is: {total_sum}")
+
+
     
