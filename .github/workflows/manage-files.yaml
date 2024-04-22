@@ -1,4 +1,4 @@
-name: Global workflow to rule them manage files
+name: Global workflow to rule them all files
 
 on:
   push:
