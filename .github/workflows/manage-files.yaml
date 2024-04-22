@@ -19,7 +19,8 @@ jobs:
           #you must specify what pattern to include otherwise all files from the repository will be replicated 
           patterns_to_include: 'greetings.yml'
           #must have, so the workflow do not copy this workflow file to all other repos. It should be only in one, main, .github repo
-          patterns_to_ignore: '.github/workflows/name_of_file_where_this_action_is_used.yml'
-          committer_username: santiago-bernabeu
-          committer_email: my-email@me.com
-          commit_message: "ci: removal of license files"
+          patterns_to_ignore: '.github/workflows/manage-files.yml'
+          patterns_to_ignore: '.github/workflows/python-package.yml'
+          committer_username: prithvikumar.detne@gmail.com
+          committer_email: prithvikumar.detne@gmail.com
+          commit_message: "ci: Addition of Manage Files"
