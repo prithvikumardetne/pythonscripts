@@ -19,7 +19,7 @@ jobs:
             github_token: ${{ secrets.MANAGE_FILES_TOKEN }}
             patterns_to_ignore: '.github/workflows/manage-files.yml'
             patterns_to_include: '.github/workflows/greetings.yml'
-            repos_to_include: 'bashscripts'
+            repos_to_ignore: 'bashscripts','template-with-workflows'
             exclude_private: true
             exclude_forked: true
             branches: main
