@@ -1,25 +1,27 @@
-name: Github Actions to Add files to multiple repositories
+name: Global workflow to rule them all
 
 on:
   push:
-    branches: [ main ] #or main
-  workflow_dispatch: {} #to enable manual triggering of the action
+      branches: [ main ] #or main
 
 jobs:
 
   replicate_changes:
 
-    runs-on: ubuntu-latest
+      runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
-      - uses: derberg/manage-files-in-multiple-repositories@v2
-        with:
-          github_token: ${{ secrets.MANAGE_FILES_TOKEN }}
-          #you must specify what pattern to include otherwise all files from the repository will be replicated 
-          patterns_to_include: '.github/workflows/greetings.yml'
-          #must have, so the workflow do not copy this workflow file to all other repos. It should be only in one, main, .github repo
-          patterns_to_ignore: '.github/workflows/manage-files.yml'
-          committer_username: prithvikumar.detne@gmail.com
-          committer_email: prithvikumar.detne@gmail.com
-          commit_message: "ci: Addition of Manage Files"
+      steps:
+        - name: Checkout repository
+          uses: actions/checkout@v3
+        - name: Replicating global workflow
+          uses: derberg/manage-files-in-multiple-repositories@v2
+          with:
+            github_token: ${{ secrets.MANAGE_FILES_TOKEN }}
+            patterns_to_ignore: '.github/workflows/manage-files.yml'
+            patterns_to_include: '.github/workflows'
+            exclude_private: true
+            exclude_forked: true
+            branches: main
+            committer_username: prithvikumar.detne@gmail.com
+            committer_email: prithvikumar.detne@gmail.com
+            commit_message: "ci: update global workflows"
