@@ -7,7 +7,7 @@ on:
 
 jobs:
 
-  removal:
+  replicate_changes:
 
     runs-on: ubuntu-latest
 
