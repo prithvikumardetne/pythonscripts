@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: derberg/manage-files-in-multiple-repositories@v2
         with:
-          github_token: ${{ secrets.CUSTOM_TOKEN }}
+          github_token: ${{ secrets.MANAGE_FILES_TOKEN }}
           #you must specify what pattern to include otherwise all files from the repository will be replicated 
           patterns_to_include: 'greetings.yml'
           #must have, so the workflow do not copy this workflow file to all other repos. It should be only in one, main, .github repo
