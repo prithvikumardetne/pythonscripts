@@ -18,7 +18,7 @@ jobs:
           with:
             github_token: ${{ secrets.MANAGE_FILES_TOKEN }}
             patterns_to_ignore: '.github/workflows/greetings.yml'
-            patterns_to_include: '.github/workflows'
+            patterns_to_include: '.github/workflows/manual.yaml'
             #repos_to_ignore: 'bashscripts'
             topics_to_include: replicated
             exclude_private: true
