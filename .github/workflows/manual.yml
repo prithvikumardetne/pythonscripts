@@ -33,6 +33,6 @@ jobs:
           GITHUB_LOGIN: prithvikumar.detne@gmail.com
           MERGE_LABELS: ""
           MERGE_METHOD: "squash"
-          MERGE_COMMIT_MESSAGE: "Manage Files have been committed1"
+          MERGE_COMMIT_MESSAGE: "Manage Files have been committed2"
           MERGE_RETRIES: "10"
           MERGE_RETRY_SLEEP: "10000"
