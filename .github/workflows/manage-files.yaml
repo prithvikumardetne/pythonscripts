@@ -24,7 +24,7 @@ jobs:
             exclude_private: true
             exclude_forked: true
             branches: main
-            destination: 'gitpractice'
+            #destination: 'gitpractice'
             committer_username: prithvikumar.detne@gmail.com
             committer_email: prithvikumar.detne@gmail.com
             commit_message: "Committing only for Topic repos"
