@@ -2,7 +2,8 @@ name: Global workflow to rule them all
 
 on:
   push:
-      branches: [ main ] #or main
+    branches: [ main ] #or main
+  workflow_dispatch: {} #to enable manual triggering of the action
 
 jobs:
 
@@ -28,3 +29,38 @@ jobs:
             committer_username: prithvikumar.detne@gmail.com
             committer_email: prithvikumar.detne@gmail.com
             commit_message: "Commit Message 1 "
+
+name: Global workflow to rule them all
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/**'
+  workflow_dispatch:
+    inputs:
+      repo_name:
+        description: |
+          manage-files-1
+        required: false
+
+jobs:
+
+  replicate_coc:
+      name: Replicate Code of Conduct in all repositories
+      runs-on: ubuntu-latest
+      steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Replicating file
+        uses: derberg/manage-files-in-multiple-repositories@v2
+        with:
+          github_token: ${{ secrets.MANAGE_FILES_TOKEN }}
+          patterns_to_include: .github/workflows
+          committer_username: prithvikumar.detne@gmail.com
+          committer_email: prithvikumar.detne@gmail.com
+          commit_message: "Single Repository commit"
+          #repos_to_ignore: shape-up-process,glee-hello-world
+          exclude_private: true
+          exclude_forked: true
+          branches: main
