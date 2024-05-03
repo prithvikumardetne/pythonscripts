@@ -1,4 +1,4 @@
-name: Global workflow to rule them all
+name: Global workflow to rule workflow
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
       - name: Replicating file
         uses: derberg/manage-files-in-multiple-repositories@v2
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.MANAGE_FILES_TOKEN }}
           patterns_to_include: single-repo.yaml
           committer_username: prithvikumar.detne@gmail.com
           committer_email: prithvikumar.detne@gmail.com
