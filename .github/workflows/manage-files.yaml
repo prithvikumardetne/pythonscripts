@@ -10,7 +10,7 @@ on:
       repo_name:
         description: |
           manage-files-1
-        required: false
+        required: true 
 
 jobs:
 
