@@ -11,7 +11,7 @@ on:
     inputs:
       repo_name:
         description: |
-          gitpractice
+          Updating it to gitpractice repo
         required: false
 
 jobs:
