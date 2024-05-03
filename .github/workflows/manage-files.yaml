@@ -19,7 +19,8 @@ jobs:
             github_token: ${{ secrets.MANAGE_FILES_TOKEN }}
             patterns_to_ignore: '.github/workflows/greetings.yml'
             patterns_to_include: '.github/workflows'
-            repos_to_ignore: gitpractice,bashscripts,ansiblescripts,sonarqube-wiki,skills-hello-github-actions,Project_1,template-with-workflows,template-from-bashscripts,bashscripts-template,Final_Project,codespaces-jupyter,
+            repos_to_ignore: '*'
+            #repos_to_ignore: gitpractice,bashscripts,ansiblescripts,sonarqube-wiki,skills-hello-github-actions,Project_1,template-with-workflows,template-from-bashscripts,bashscripts-template,Final_Project,codespaces-jupyter,
             exclude_private: true
             exclude_forked: true
             branches: main
