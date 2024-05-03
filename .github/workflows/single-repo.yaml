@@ -11,8 +11,8 @@ on:
     inputs:
       repo_name:
         description: |
-          Updating it to gitpractice repo
-        required: false
+          Repo Name 
+        required: true
 
 jobs:
 
@@ -29,4 +29,4 @@ jobs:
           patterns_to_include: single-repo.yaml
           committer_username: prithvikumar.detne@gmail.com
           committer_email: prithvikumar.detne@gmail.com
-          commit_message: "Single Repo Commit"
+          commit_message: "Validating Required Parameter"
