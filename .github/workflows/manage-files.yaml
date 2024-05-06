@@ -27,5 +27,5 @@ jobs:
             #destination: 'gitpractice'
             committer_username: prithvikumar.detne@gmail.com
             committer_email: prithvikumar.detne@gmail.com
-            commit_message: "Committing only for Topic repos"
+            commit_message: "Validating Auto Merge"
             bot_branch_name: true
