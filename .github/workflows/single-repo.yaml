@@ -17,7 +17,7 @@ on:
 jobs:
 
   replicate_single:
-      name: Replicate Code of Conduct in all repositories
+      name: Replicating Single Repo
       runs-on: ubuntu-latest
       steps:
       - name: Checkout repository
