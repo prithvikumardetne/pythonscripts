@@ -29,4 +29,4 @@ jobs:
           patterns_to_include: single-repo.yaml
           committer_username: prithvikumar.detne@gmail.com
           committer_email: prithvikumar.detne@gmail.com
-          commit_message: "Validating Required Parameter"
+          commit_message: "Validating Auto Merge "
