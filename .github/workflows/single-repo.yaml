@@ -16,7 +16,7 @@ on:
 
 jobs:
 
-  replicate_coc:
+  replicate_single:
       name: Replicate Code of Conduct in all repositories
       runs-on: ubuntu-latest
       steps:
