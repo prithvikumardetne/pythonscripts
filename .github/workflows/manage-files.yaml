@@ -20,7 +20,7 @@ jobs:
             patterns_to_ignore: '.github/workflows/greetings.yml'
             patterns_to_include: '.github/workflows'
             #repos_to_ignore: 'bashscripts'
-            topics_to_include: replicated
+            topics_to_include: snyk-iac-scan
             exclude_private: true
             exclude_forked: true
             branches: main
