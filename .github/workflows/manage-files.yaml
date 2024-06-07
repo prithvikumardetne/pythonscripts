@@ -1,4 +1,4 @@
-name: Global workflow to rule them all
+name: Snyk IAC Scanning - Multiple Repos
 
 on:
   push:
