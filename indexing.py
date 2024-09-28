@@ -1,5 +1,7 @@
 name = "Prithvi Kumar Detne"
 
-print(name[3]) # indexing to fetch value 
+index = name.find(" ")
 
-print(name[0:len(name)])
+print (name[:index])
+
+print(name[0:9:2])
