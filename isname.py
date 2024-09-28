@@ -7,3 +7,5 @@ print("prithvi" not in name)
 name = "Prithvi Kumar Detne"
 
 print("Prithvi" in name)
+
+print("Detne" not in name)
