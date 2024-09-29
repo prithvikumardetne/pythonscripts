@@ -1,0 +1,8 @@
+order_amounts = [100,800,900,"YES","No",True,600]
+sum = 0
+for x in order_amounts:
+    if type(x) == int:
+        sum = sum + x
+    else:
+        continue
+print(sum)
