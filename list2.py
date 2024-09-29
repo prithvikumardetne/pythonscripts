@@ -7,3 +7,13 @@ name = "Prithvi Kumar Detne "
 ordered_name = name.split(" ")
 
 print(ordered_name)
+new_ordered_name = ordered_name[1]="DPK"
+
+print(new_ordered_name)
+
+
+names = ["A","B","C","D"]
+
+names[2]="E"
+
+print(names)
