@@ -14,7 +14,7 @@ print(bill_after_gst)'''
 
 bill_amount = [(100,5),(200,8),(300,6),(400,5),(500,5),(600,8)]
 
-bill_amount_with_gst = [x[0] + x[0] * x[1]/100  for x in bill_amount]
+bill_amount_with_gst = [(x[0],x[1],x[0] + x[0] * x[1]/100)  for x in bill_amount]
 
 """bill_amount_with_gst = []
 for x in bill_amount:
