@@ -31,3 +31,7 @@ print(names_list)
 names_tuple = tuple(names_list)
 
 print(names_tuple)
+
+print(names_list.pop())
+
+names_tuple.pop()
