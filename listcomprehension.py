@@ -11,7 +11,11 @@ print(list1)
 
 flattened_lists = []
 
-for sublists in list1:
+'''for sublists in list1:
     for item in sublists:
         flattened_lists.append(item)
+print(flattened_lists)'''
+
+flattened_lists = [item for sublists in list1 for item in sublists]
+
 print(flattened_lists)
